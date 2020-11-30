@@ -1,0 +1,46 @@
+{
+	"name": "broccoli.co",
+	"version": "1.0.0",
+	"private": true,
+	"dependencies": {
+		"axios": "^0.19.0",
+		"prop-types": "^15.7.2",
+		"react": "^16.8.6",
+		"react-dom": "^16.8.6",
+		"react-scripts": "3.0.1",
+		"styled-components": "^4.3.2",
+		"styled-system": "^5.0.16"
+	},
+	"scripts": {
+		"start": "react-scripts start",
+		"build": "react-scripts build",
+		"test": "react-scripts test --watchAll=false",
+		"test:watch": "react-scripts test",
+		"cy:open": "cypress open",
+		"cy:run": "cypress run --browser chrome --headed --no-exit",
+		"test:e2e": "npm-run-all --parallel --race start cy:run",
+		"eject": "react-scripts eject"
+	},
+	"eslintConfig": {
+		"extends": "react-app"
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	},
+	"devDependencies": {
+		"@testing-library/cypress": "^4.0.5",
+		"@testing-library/react": "^8.0.7",
+		"@testing-library/react-hooks": "^1.1.0",
+		"cypress": "^3.4.1",
+		"npm-run-all": "^4.1.5"
+	}
+}
